@@ -1,0 +1,30 @@
+# 编译产物
+build/
+*.o
+*.out
+*.exe
+
+# 手动编译时在源码目录里留下的同名可执行文件（无扩展名）
+# Makefile 的产物统一在 build/，这些是手动 cc 时漏加 -o build/... 造成的
+/lessons/*
+!/lessons/*.c
+/exercises/*
+!/exercises/*.c
+!/exercises/solutions/
+/exercises/solutions/*
+!/exercises/solutions/*.c
+/projects/*
+!/projects/*.c
+
+# macOS 调试符号目录
+*.dSYM/
+
+# 课程里运行时生成的数据文件
+students.txt
+report.txt
+gradebook.txt
+scores.txt
+students_with_scores.txt
+
+# macOS 的文件夹元数据
+.DS_Store
